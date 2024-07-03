@@ -1,0 +1,12 @@
+.flex{
+    display: flex;  
+}
+.j-spacebetween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.j-end{
+    justify-content: flex-end;
+}

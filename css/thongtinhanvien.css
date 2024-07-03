@@ -1,0 +1,67 @@
+@import url(components/font.css);
+@import url(components/flexbox.css);
+@import url(components/button.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: GoogleSands;
+}
+.thong-tin-nv{
+    padding: 16px;
+}
+.width-auto{
+    width: auto;
+}
+.thong-tin-nv input{
+    font-size: 16px;
+    height: 46px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+    
+}
+.thong-tin-nv input[type="text"], .thong-tin-nv input[type="date"]{
+    width: 100%;
+    display: block; 
+}
+.thong-tin-nv h1, .width-25, .width-50, .width-30, .width-100{
+    padding:  10px 10px;
+}
+.width-25{
+    width: 25%;
+    
+}
+.width-50{
+    width: 50%;
+}
+.width-30{
+    width: 33.33%;
+}
+.width-100{
+    width: 100%;
+}
+.color-red{
+    color: red;
+}
+.margin-left-10{
+    margin-left: 10px;
+}
+select{
+    width: 100%;
+    height: 46px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.row button{
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.thong-tin-nv label{
+    font-size: 16px;
+}
+.button-huy{
+    background-color: white !important;color: black !important;
+}

@@ -1,0 +1,110 @@
+@import url(components/button.css);
+@import url(components/table.css);
+@import url(components/input.css);
+@import url(components/select.css);
+@import url(components/font.css);
+@import url(components/flexbox.css);
+@import url(/assets/assets/font/fontawesome-5.15.1/js/all.min.js);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: GoogleSands;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+    
+.container{ 
+    height: 100%;
+}
+
+header{
+    margin-bottom: 10px;
+}
+header div:first-child > *{
+    margin-left: 16px;
+    margin-right: 10px;
+}
+header select {
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.user{
+    width: 220px;
+}
+.avt{
+    border-radius: 50%;
+}
+.container{
+    height: 720px;
+}
+.menu{
+    padding-top: 40px;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(20, 0, 51);
+    padding: 16px ;
+}
+.content{
+    padding-left: 16px;
+    width: 85%;
+    background-color: #F5F5F5;
+    padding-right: 10px ;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.menu li:hover{
+    background-color: #99CAFF;
+}
+.menu li:nth-child(n+2){
+    margin: 20px 0px 20px 0px;
+}
+.add{
+    height: 80px;
+}
+
+.infor{
+    background-color: white;
+    padding: 16px 16px;
+    
+}
+.timkiem{
+    margin-bottom:  10px;
+   
+    height: 50px;
+}
+.timkiem div:first-child{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #EEEEEE;
+    width: 280;
+    padding-right: 16px;
+}
+.timkiem div:last-child{
+    width: 70px;
+}
+.timkiem div:first-child img {
+    display: inline-block;
+    height: 100%;
+}
+.timkiem div:first-child button{
+    height: 100%;
+}
+.phantrang{
+    font-weight: bold;
+    font-size: 16px;
+}

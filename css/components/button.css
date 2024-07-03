@@ -1,0 +1,25 @@
+.button{
+    padding: 0 24px 0 24px;
+    color: white;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #089740;min-width: 100px;
+}
+.button-icon{
+    padding: 0 16px 0 16px;
+    color: white;
+    font-size: 13px;
+    height: 40px;
+    background-color: #019160;
+    min-width: 100px;
+}
+.button-icon:hover{
+    background-color: #2FBE8E;
+}
+.button-icon:click{
+    background-color: #2FBE8E;
+}
+.button-icon>img{
+    margin-right: 8px;
+}

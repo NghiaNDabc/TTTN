@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/assets/font/fontawesome-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<style>
+
+
+    
+</style>
+<body>
+    <header class="flex j-spacebetween">
+        <div class="flex align-center">
+        <button><img src="./assets/assets/img/toggle.png" height="30px" alt=""></button>
+        <button><img src="./assets/assets/img/cukcuk-logo.png" width="150px" alt=""></button>
+        <select name="" id="">
+            <option value="HN">Chi nhánh hà nội</option>
+        </select>
+        </div>
+        <div class="user flex j-spacebetween align-center">
+            <img class="avt" src="assets/assets/icon/avatar-default.png" width="50px" alt="">
+            <p>Nguyễn Văn Mạnh</p>
+            <img src="./assets/assets/icon/option.png" alt="">
+        </div>
+    </header>
+    <div class="container flex">
+        <nav class="menu">  
+            <ul>
+                <li> <img src="./assets/assets/icon/dashboard.png" alt="">Trang chủ</li>
+                <li><img src="./assets/assets/icon/document-online.png" alt="">Báo cáo</li>
+                <li><img src="./assets/assets/icon/dic-employee.png" alt="">Nhân viên</li>
+                <li><img src="./assets/assets/icon/setting.png" alt="">Cài đặt</li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="add flex j-spacebetween align-center">
+                <h2>Quản lý nhân viên</h2>
+                <button class="button-icon flex align-center j-spacebetween"><img src="./assets/assets/icon/add.png" width="16px" alt="" >Thêm mới</button>
+            </div>
+
+            <div class="infor">
+                <div class="timkiem flex align-center j-spacebetween">
+                    <div class="flex align-center">
+                        <input placeholder="Tìm kiếm theo mã, họ tên" class="input-icon">
+                        <button><img src="./assets/assets/icon/search.png" width="24px" alt=""></button>
+                    </div>
+
+                    <div class="flex align-center j-spacebetween">
+                        <button ><img src="./assets/assets/icon/export-excel-50.png" width="24px" alt=""></button>
+                        <button><img src="./assets/assets/icon/refresh.png" width="24px" alt=""></button>
+                    </div>
+                </div>
+                <div class="table">
+                   <div class="table-container">
+                    <table class="table">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã nhân viên</th>
+                            <th>Họ và tên</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                            <th>Địa chỉ email</th>
+                            <th>Địa chỉ </th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>NV-00001</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>Nam</td>
+                            <td>01/01/1990</td>
+                            <td>nguyenvana@example.com</td>
+                            <td>Hà Nội <span class="chucnang">
+                                <button><i class=" fa-solid fa-house"></i></button>
+                                <button><img src="assets/assets/icon/close-48.png" width="24px" alt=""></button></span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>NV-00002</td>
+                            <td>Trần Thị B</td>
+                            <td>Nữ</td>
+                            <td>02/02/1991</td>
+                            <td>tranthib@example.com</td>
+                            <td>Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NV-00003</td>
+                            <td>Lê Văn C</td>
+                            <td>Nam</td>
+                            <td>03/03/1992</td>
+                            <td>levanc@example.com</td>
+                            <td>Hồ Chí Minh</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NV-00004</td>
+                            <td>Phạm Thị D</td>
+                            <td>Nữ</td>
+                            <td>04/04/1993</td>
+                            <td>phamthid@example.com</td>
+                            <td>Hải Phòng</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>NV-00005</td>
+                            <td>Hoàng Văn E</td>
+                            <td>Nam</td>
+                            <td>05/05/1994</td>
+                            <td>hoangvane@example.com</td>
+                            <td>Đà Nẵng</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>NV-00006</td>
+                            <td>Đỗ Thị F</td>
+                            <td>Nữ</td>
+                            <td>06/06/1995</td>
+                            <td>dothif@example.com</td>
+                            <td>Cần Thơ</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>NV-00007</td>
+                            <td>Ngô Văn G</td>
+                            <td>Nam</td>
+                            <td>07/07/1996</td>
+                            <td>ngovang@example.com</td>
+                            <td>Nha Trang</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>NV-00008</td>
+                            <td>Phan Thị H</td>
+                            <td>Nữ</td>
+                            <td>08/08/1997</td>
+                            <td>phanthih@example.com</td>
+                            <td>Quảng Ninh</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>NV-00009</td>
+                            <td>Vũ Văn I</td>
+                            <td>Nam</td>
+                            <td>09/09/1998</td>
+                            <td>vuvani@example.com</td>
+                            <td>Bình Dương</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>NV-00010</td>
+                            <td>Đinh Thị K</td>
+                            <td>Nữ</td>
+                            <td>10/10/1999</td>
+                            <td>dinhthik@example.com</td>
+                            <td>Đồng Nai</td>
+                        </tr> 
+                    </table>
+                   </div>
+                </body>
+                </div>
+                <div class="phantrang flex j-spacebetween align-center">
+                    <p>Tổng: 100</p>
+                    <div class="flex j-spacebetween align-center">
+                        Số bản ghi/trang
+                        <select class="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <button><img src="assets/assets/icon/btn-prev-page.svg" alt=""></button>
+                        <button><img src="assets/assets/icon/btn-next-page.svg" alt=""></button>    
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+    <script src="./assets/assets/font/fontawesome-5.15.1/js/all.min.js"></script>
+</body>
+</html>
