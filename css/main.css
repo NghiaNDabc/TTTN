@@ -68,7 +68,7 @@ header select {
     border-radius: 10px;
 }
 .menu li:hover{
-    background-color: #99CAFF;
+    background-color: #C47DD0;
 }
 .menu li:nth-child(n+2){
     margin: 20px 0px 20px 0px;
