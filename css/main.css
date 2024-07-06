@@ -16,9 +16,7 @@ button{
     border: none;
     cursor: pointer;
 }
-
-
-    
+   
 .container{ 
     height: 100%;
 }
@@ -51,19 +49,37 @@ header select {
     width: 15%;
     background-color: rgb(20, 0, 51);
     padding: 16px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    color: white;
+    transition: width 0.3s;
+    line-height: 30px;
+    font-size: 20px;
+}
+.menu.collapsed {
+    width: 5%;
+}
+.content.width-95{
+    width: 95%;
+}
+.thugon{
+    cursor: pointer;
+    border-top: 1px solid white;
 }
 .content{
     padding-left: 16px;
     width: 85%;
+    transition: width 0.3s;
     background-color: #F5F5F5;
     padding-right: 10px ;
+    
 }
 
 .menu li{
     display: flex;
     align-items: center;
-    line-height: 30px;
-    font-size: 20px;
+   
     color: white;
     border-radius: 10px;
 }
