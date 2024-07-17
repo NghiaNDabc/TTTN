@@ -7,3 +7,13 @@
      font-size: 13px;
      padding: 0 16px;
  }
+ input:focus {
+    outline: 1px solid #089740; 
+}
+select:focus {
+    outline: 1px solid #089740; 
+
+}
+.input-error{
+    border: 1px solid red !important;
+}

@@ -1,6 +1,7 @@
 @import url(components/font.css);
 @import url(components/flexbox.css);
 @import url(components/button.css);
+@import url(components/input.css);
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +20,6 @@
     height: 46px;
     border: 1px solid gray;
     border-radius: 4px;
-    outline: none;
     
 }
 .thong-tin-nv input[type="text"], .thong-tin-nv input[type="date"]{

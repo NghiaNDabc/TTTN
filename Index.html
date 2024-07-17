@@ -59,8 +59,8 @@
                 </div>
                 <div class="table">
                    <div class="table-container">
-                    <table class="table">
-                        <tr>
+                    <table id="table" class="table">
+                        <thead>
                             <th>STT</th>
                             <th>Mã nhân viên</th>
                             <th>Họ và tên</th>
@@ -68,8 +68,8 @@
                             <th>Ngày sinh</th>
                             <th>Địa chỉ email</th>
                             <th>Địa chỉ </th>
-                        </tr>
-                        <tr>
+                        </thead>
+                        <tbody>
                             <td>1</td>
                             <td>NV-00001</td>
                             <td>Nguyễn Văn A</td>
@@ -80,62 +80,8 @@
                                 <button style="font-size: 24px; color: #39AC66;"><i class=" fa fa-solid fa-pen"></i></button>
                                 <button><i class=" fa-solid fa-house"></i></button>
                                 <button><img src="./assets/assets/icon/close-48.png" width="24px" alt=""></button></span></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>NV-00002</td>
-                            <td>Trần Thị B</td>
-                            <td>Nữ</td>
-                            <td>02/02/1991</td>
-                            <td>tranthib@example.com</td>
-                            <td>Hà Nội</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>NV-00003</td>
-                            <td>Lê Văn C</td>
-                            <td>Nam</td>
-                            <td>03/03/1992</td>
-                            <td>levanc@example.com</td>
-                            <td>Hồ Chí Minh</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>NV-00004</td>
-                            <td>Phạm Thị D</td>
-                            <td>Nữ</td>
-                            <td>04/04/1993</td>
-                            <td>phamthid@example.com</td>
-                            <td>Hải Phòng</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>NV-00005</td>
-                            <td>Hoàng Văn E</td>
-                            <td>Nam</td>
-                            <td>05/05/1994</td>
-                            <td>hoangvane@example.com</td>
-                            <td>Đà Nẵng</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>NV-00006</td>
-                            <td>Đỗ Thị F</td>
-                            <td>Nữ</td>
-                            <td>06/06/1995</td>
-                            <td>dothif@example.com</td>
-                            <td>Cần Thơ</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>NV-00007</td>
-                            <td>Ngô Văn G</td>
-                            <td>Nam</td>
-                            <td>07/07/1996</td>
-                            <td>ngovang@example.com</td>
-                            <td>Nha Trang</td>
-                        </tr>
-                       
+                      
+                        </tbody>
                     </table>
                    </div>
                 </body>
@@ -171,18 +117,18 @@
             <div class="width-25">
                 <label for="maNv">Mã nhân viên <span class="color-red">*</span></label>
                 <br>
-                <input type="text" name="maNv">
+                <input required id="maNV" type="text" name="maNv">
             </div>
             <div class="width-25">
                 <label for="hoVaTen">Họ và tên <span class="color-red">*</span></label>
                 <br>
-                <input type="text" name="hoVaTen">
+                <input required id="hoVaTen" type="text" name="hoVaTen">
             </div>
 
             <div class="width-25">
                 <label for="ngaySinh">Ngày sinh </label>
                 <br>
-                <input type="date" data-date="" data-date-format="DD MMMM YYYY" >
+                <input id="ngaySinh" type="date" data-date="" data-date-format="DD MMMM YYYY" >
             </div>
             <div class="width-25">
                 <label >Giới tính</label>
@@ -198,33 +144,33 @@
             <div class="width-50">
                 <label for="viTri">Vị trí</label>
                 <br>
-                <select name="viTri" id="">
+                <select itemid="viTri"  name="viTri" id="viTri">
 
                 </select>
             </div>
             <div class="width-25" >
-                <label for="soCMTND">Số CMTND </label>
+                <label required for="soCMTND">Số CMTND </label>
                 <br>
-                <input type="text">
+                <input id="soCMTND" type="text">
             </div>
             <div class="width-25">
-                <label for="ngaySinh">Ngày cấp </label>
+                <label for="ngayCap">Ngày cấp </label>
                 <br>
-                <input type="date" data-date="" data-date-format="DD MMMM YYYY" >
+                <input id="ngayCap" type="date" data-date="" data-date-format="DD MMMM YYYY" >
             </div>
         </div>
         <div class="row flex align-center j-spacebetween">
             <div class="width-50">
                 <label for="phongBan">Phòng ban</label>
                 <br>
-                <select name="phongBan" id="">
+                <select id="phongBan" name="phongBan" id="">
 
                 </select>
             </div>
             <div class="width-50" >
                 <label for="noiCap">Nơi cấp</label>
                 <br>
-                <input type="text">
+                <input id="noiCap" type="text">
             </div>
             
         </div>
@@ -239,7 +185,7 @@
             <div class="width-30">
                 <label for="">DT di động</label>
                 <br>
-                <input type="text" >
+                <input required id="dtDiDong" type="text" >
             </div>
             <div class="width-30">
                 <label for="">DT cố định </label>
@@ -249,7 +195,7 @@
             <div class="width-30">
                 <label for="">Email </label>
                 <br>
-                <input type="text" >
+                <input required id="email" type="text" >
             </div>
         </div>
         <div class="row flex align-center j-spacebetween">
@@ -271,11 +217,13 @@
         </div>
         <div class="row flex j-end align-center width-100" style="background-color: #E0E0E0; border-radius: 4px;">
             <button class="button button-huy">Hủy</button>
-            <button class="button">Cắt</button>
+            <button class="button " id="button-save">Cắt</button>
         </div>
         </div>
     </div>
     <script src="./assets/assets/font/fontawesome-5.15.1/js/all.min.js"></script>
     <script src="./js/openForm.js"></script>
+    <script src="./js/jQuery-3.7.1.js"></script>
+    <script src="./js/employee.js"></script>
 </body>
 </html>
