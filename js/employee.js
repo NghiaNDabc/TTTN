@@ -168,7 +168,7 @@ $(document).ready(function(){
             data: JSON.stringify(employeeData),
             success: function(response) {
                 alert('Thành công!');
-                // Additional actions like closing the form or refreshing the table can be added here
+              
             },
             error: function(error) {
                 alert('Lỗi thêm nv.');
