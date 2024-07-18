@@ -127,10 +127,10 @@ $(document).ready(function(){
         }
         var employeeData = {
             createdDate: new Date().toISOString(),
-            createdBy: 'string',
+            // createdBy: 'string',
             modifiedDate: new Date().toISOString(),
-            modifiedBy: 'string',
-            employeeId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+            // modifiedBy: 'string',
+            // employeeId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
             employeeCode: $('#maNV').val(),
             firstName: $('#hoVaTen').val().split(' ')[0],
             lastName: $('#hoVaTen').val().split(' ').slice(1).join(' '),
@@ -146,19 +146,19 @@ $(document).ready(function(){
             joinDate: new Date().toISOString(),
             martialStatus: 0,
             educationalBackground: 0,
-            qualificationId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-            departmentId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-            positionId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-            nationalityId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-            workStatus: 0,
-            personalTaxCode: 'string',
-            salary: 0,
-            positionCode: 'string',
-            positionName: 'string',
-            departmentCode: 'string',
-            departmentName: 'string',
-            qualificationName: 'string',
-            nationalityName: 'string'
+            // qualificationId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+            departmentId: $('#phongBan').val(),
+            // positionId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+            // nationalityId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+            // workStatus: 0,
+            // personalTaxCode: 'string',
+            // salary: 0,
+            // positionCode: 'string',
+            // positionName: 'string',
+            // departmentCode: 'string',
+            // departmentName: 'string',
+            // qualificationName: 'string',
+            // nationalityName: 'string'
         };
 
         $.ajax({
@@ -167,11 +167,11 @@ $(document).ready(function(){
             contentType: 'application/json',
             data: JSON.stringify(employeeData),
             success: function(response) {
-                alert('Employee data saved successfully!');
+                alert('Thành công!');
                 // Additional actions like closing the form or refreshing the table can be added here
             },
             error: function(error) {
-                alert('Error saving employee data.');
+                alert('Lỗi thêm nv.');
                 console.log(error);
             }
         });
