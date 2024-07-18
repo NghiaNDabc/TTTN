@@ -74,6 +74,23 @@ class EmployeePage{
 }
 
 $(document).ready(function(){
+    const apiUrl = 'https://cukcuk.manhnv.net/api/v1/Departments';
+
+      // Gọi API
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const selectElement = document.getElementById('phongBan');
+          
+          // Duyệt qua dữ liệu và tạo các thẻ <option>
+          data.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.DepartmentId;
+            option.text = item.DepartmentName;
+            selectElement.appendChild(option);
+          });
+        })
+        .catch(error => console.error('Error fetching data:', error));
     $('#button-save').on('click', function(e) {
         e.preventDefault();
         let maNV = $('#maNV').val()
