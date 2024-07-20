@@ -87,23 +87,23 @@
                 </body>
                 </div>
                 <div class="phantrang flex j-spacebetween align-center">
-                    <p>Tổng: 100</p>
+                    <p>Tổng: <span id="tong"></span></p>
                     <div class="flex j-spacebetween align-center">
                        <p> Số bản ghi/trang</p>
-                        <select class="select">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
+                        <select id="pageSize" class="select">
                             <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                            <option value="80">80</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
                         </select>
-                        <button><img src="./assets/assets/icon/btn-prev-page.svg" alt=""></button>
-                        <button><img src="./assets/assets/icon/btn-next-page.svg" alt=""></button>    
+                        <button id="pre"><img src="./assets/assets/icon/btn-prev-page.svg" alt=""></button>
+                        <button id="next"><img src="./assets/assets/icon/btn-next-page.svg" alt=""></button>    
                     </div>
                 </div>
             </div>
@@ -178,7 +178,7 @@
             <div class="width-100">
                 <label for="diaChi">Địa chỉ </label>
                 <br>
-                <input type="text" >
+                <input id="diaChi" type="text" >
             </div>
         </div>
         <div class="row flex align-center j-spacebetween">
