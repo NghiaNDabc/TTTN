@@ -137,39 +137,18 @@ class EmployeePage {
      */
     saveEmployee() {
         const employeeData = {
-            createdDate: new Date().toISOString(),
-            createdBy: "Nghia",
-            modifiedDate: new Date().toISOString(),
-            modifiedBy: "Nghia",
-            employeeId: null,//"3fa85f64-5717-4562-b3fc-2c963f66afa6", // Thay đổi hoặc thêm nếu cần thiết
-            employeeCode: document.getElementById('maNV').value ,
-            firstName: document.getElementById('hoVaTen').value.split(' ')[0],
-            lastName: document.getElementById('hoVaTen').value.split(' ').slice(1).join(' '),
-            fullName: document.getElementById('hoVaTen').value,
-            gender: parseInt(document.querySelector('input[name="gender"]:checked').value, 10) || null, // Đảm bảo giá trị là số
-            dateOfBirth: new Date(document.getElementById('ngaySinh').value).toISOString() || null, // Định dạng lại thành ISO
-            phoneNumber: document.getElementById('dtDiDong').value || null,
-            email: document.getElementById('email').value || null,
-            address: document.getElementById('diaChi').value || null,
-            identityNumber: document.getElementById('soCMTND').value || null,
-            identityDate: new Date(document.getElementById('ngayCap').value).toISOString() || null, // Định dạng lại thành ISO
-            identityPlace: document.getElementById('noiCap').value || null,
-            joinDate: new Date().toISOString() ,
-            martialStatus: null,//parseInt(document.querySelector('input[name="martialStatus"]:checked').value, 10), // Giá trị từ input
-            educationalBackground:null,// parseInt(document.querySelector('input[name="educationalBackground"]:checked').value, 10), // Giá trị từ input
-            qualificationId: null,//document.getElementById('qualificationId').value,
-            departmentId: document.getElementById('phongBan').value || null,
-            positionId: null,//document.getElementById('positionId').value,
-            nationalityId: null,//document.getElementById('nationalityId').value,
-            workStatus: null,//parseInt(document.querySelector('input[name="workStatus"]:checked').value, 10), // Giá trị từ input
-            personalTaxCode:null,// document.getElementById('personalTaxCode').value,
-            salary: null,//parseFloat(document.getElementById('salary').value), // Đảm bảo giá trị là số
-            positionCode: null,//document.getElementById('positionCode').value,
-            positionName: null,//document.getElementById('positionName').value,
-            departmentCode: null,//document.getElementById('departmentCode').value,
-            departmentName:null,// document.getElementById('departmentName').value,
-            qualificationName:null,// document.getElementById('qualificationName').value,
-            nationalityName: null,//document.getElementById('nationalityName').value
+            EmployeeCode: document.getElementById('maNV').value ,
+            FullName: document.getElementById('hoVaTen').value,
+            DateOfBirth: new Date(document.getElementById('ngaySinh').value).toISOString() , // Định dạng lại thành ISO
+            Gender: parseInt(document.querySelector('input[name="gender"]:checked').value, 10) , // Đảm bảo giá trị là số
+            PhoneNumber: document.getElementById('dtDiDong').value ,
+            Email: document.getElementById('email').value ,
+            Address: document.getElementById('diaChi').value ,
+            IdentityNumber: document.getElementById('soCMTND').value ,
+            IdentityDate: new Date(document.getElementById('ngayCap').value).toISOString() , // Định dạng lại thành ISO
+            IdentityPlace: document.getElementById('noiCap').value ,
+            DepartmentId: document.getElementById('phongBan').value ,
+       
         };
         
 
@@ -179,7 +158,7 @@ class EmployeePage {
             return;
         }
 
-        fetch(this.apiUrl + 'Employees', {
+        fetch('https://cukcuk.manhnv.net/api/v1/Employees', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -192,9 +171,9 @@ class EmployeePage {
                 this.loadData(document.getElementById('pageSize').value);
                 this.btnClose();
             } 
-            // else {
-            //     throw new Error('Failed to save employee');
-            // }
+            else {
+                throw new Error('Failed to save employee');
+            }
         })
         .catch(error => {
             alert('Lỗi thêm nv. ' + error);
@@ -228,19 +207,19 @@ class EmployeePage {
      */
     validateEmployeeData(employeeData) {
         let alertString = "";
-        if (!employeeData.employeeCode) {
+        if (!employeeData.EmployeeCode) {
             alertString += "Mã nhân viên không được để trống\n";
         }
-        if (!employeeData.fullName) {
+        if (!employeeData.FullName) {
             alertString += "Họ và tên không được để trống\n";
         }
-        if (!employeeData.identityNumber) {
+        if (!employeeData.IdentityNumber) {
             alertString += "Số cmtnd không được để trống\n";
         }
-        if (!employeeData.email) {
+        if (!employeeData.Email) {
             alertString += "Email không được để trống\n";
         }
-        if (!employeeData.phoneNumber) {
+        if (!employeeData.PhoneNumber) {
             alertString += "Số đt không được để trống\n";
         }
         return alertString || null;

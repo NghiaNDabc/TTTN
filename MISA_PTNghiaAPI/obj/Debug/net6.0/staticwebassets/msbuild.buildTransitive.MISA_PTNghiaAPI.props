@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MISA_PTNghiaAPI.props" />
+</Project>

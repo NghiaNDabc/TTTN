@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\TTTN\Misa.Core\bin\Debug\net6.0\Misa.Core.deps.json
+C:\Users\HP\Desktop\TTTN\Misa.Core\bin\Debug\net6.0\Misa.Core.dll
+C:\Users\HP\Desktop\TTTN\Misa.Core\bin\Debug\net6.0\Misa.Core.pdb
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.AssemblyInfo.cs
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.dll
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\refint\Misa.Core.dll
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\Misa.Core.pdb
+C:\Users\HP\Desktop\TTTN\Misa.Core\obj\Debug\net6.0\ref\Misa.Core.dll

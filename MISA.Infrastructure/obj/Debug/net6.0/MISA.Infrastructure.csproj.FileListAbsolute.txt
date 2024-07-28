@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\bin\Debug\net6.0\MISA.Infrastructure.deps.json
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\bin\Debug\net6.0\MISA.Infrastructure.dll
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\bin\Debug\net6.0\MISA.Infrastructure.pdb
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\bin\Debug\net6.0\Misa.Core.dll
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\bin\Debug\net6.0\Misa.Core.pdb
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.csproj.CopyComplete
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.dll
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\refint\MISA.Infrastructure.dll
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\MISA.Infrastructure.pdb
+C:\Users\HP\Desktop\TTTN\MISA.Infrastructure\obj\Debug\net6.0\ref\MISA.Infrastructure.dll
