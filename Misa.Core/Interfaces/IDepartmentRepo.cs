@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Misa.Core.Interfaces
 {
-    internal interface IDepartmentRepo:IBaseRepo<Department>
+    public interface IDepartmentRepo:IBaseRepo<Department>
     {
     }
 }
