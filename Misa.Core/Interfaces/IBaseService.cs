@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Misa.Core.Interfaces
 {
-    internal interface IBaseService< T> where T : class
+    public interface IBaseService< T> where T : class
     {
         ServiceResult InsertService( T obj );
         object ImportService( T obj );

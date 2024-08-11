@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\CodeFristFromDb.exe.config
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\CodeFristFromDb.exe
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\CodeFristFromDb.pdb
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.csproj.CopyComplete
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.exe
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.pdb
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.Migrations.InitialModel.resources
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.Migrations.AddCateTable.resources
+C:\Users\HP\Desktop\TTTN\CodeFristFromDb\obj\Debug\CodeFristFromDb.Migrations.AddCateColumnToCourseTable.resources

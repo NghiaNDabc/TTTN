@@ -86,6 +86,10 @@
       "Misa.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "MySqlConnector": "2.3.7"
+        },
         "compile": {
           "bin/placeholder/Misa.Core.dll": {}
         },

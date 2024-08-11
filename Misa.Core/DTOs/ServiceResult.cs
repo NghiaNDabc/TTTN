@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Misa.Core.DTOs
 {
-    public interface ServiceResult
+    public class ServiceResult
     {
         public bool IsSuccess { get; set; }
         public object Data { get; set; }

@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\CodeFirstFromDb.exe.config
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\CodeFirstFromDb.exe
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\CodeFirstFromDb.pdb
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.csproj.CopyComplete
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.exe
+C:\Users\HP\Desktop\TTTN\CodeFirstFromDb\obj\Debug\CodeFirstFromDb.pdb

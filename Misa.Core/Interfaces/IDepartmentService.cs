@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Misa.Core.Interfaces
 {
-    internal interface IDepartmentService
+    public interface IDepartmentService
     {
     }
 }
