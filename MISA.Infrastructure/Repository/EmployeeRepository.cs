@@ -12,14 +12,14 @@ namespace MISA.Infrastructure.Repository
         //khai báo connection string
         string connectionstring = "Host=localhost;Port=3306;Database=haui_2021605945_phamtrongnghia;User=ptnghia;Password=1";
 
-        public int Delete(Guid id)
+        public int Delete(Employee obj)
         {
             using (var connection = new MySqlConnection(connectionstring))
             {
                 connection.Open();
             //sql
                 var command = new MySqlCommand("DELETE FROM Employee WHERE EmployeeId = @EmployeeId", connection);
-                command.Parameters.AddWithValue("@EmployeeId",id);
+                command.Parameters.AddWithValue("@EmployeeId", obj.EmployeeId);
                 return command.ExecuteNonQuery();
             }
         }

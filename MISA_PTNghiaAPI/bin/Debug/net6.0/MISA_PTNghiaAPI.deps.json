@@ -106,6 +106,10 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Misa.Core/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "MySqlConnector": "2.3.7"
+        },
         "runtime": {
           "Misa.Core.dll": {}
         }
