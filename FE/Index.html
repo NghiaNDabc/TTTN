@@ -20,7 +20,7 @@
         </div>
         <div class="user flex j-spacebetween align-center">
             <img class="avt" src="./assets/assets/icon/avatar-default.png" width="50px" alt="">
-            <p>Nguyễn Văn Mạnh</p>
+            <p>Phạm Trọng Nghĩa</p>
             <img src="./assets/assets/icon/option.png" alt="">
         </div>
     </header>
@@ -48,8 +48,8 @@
             <div class="infor">
                 <div class="timkiem flex align-center j-spacebetween">
                     <div class="flex align-center">
-                        <input placeholder="Tìm kiếm theo mã, họ tên" class="input-icon">
-                        <button><img src="./assets/assets/icon/search.png" width="24px" alt=""></button>
+                        <input placeholder="Tìm kiếm theo mã, họ tên" class="input-icon" id="searchById">
+                        <button><img src="./assets/assets/icon/search.png" id="btn-timkiem" width="24px" alt=""></button>
                     </div>
 
                     <div class="flex align-center j-spacebetween">
@@ -68,6 +68,7 @@
                             <th>Ngày sinh</th>
                             <th>Địa chỉ email</th>
                             <th>Địa chỉ </th>
+                            <th>Hành động </th>
                         </thead>
                         <tbody>
                             <td>1</td>
@@ -221,6 +222,12 @@
         </div>
         </div>
     </div>
+    <div id="success-notification" class="notification success hidden">
+        <img src="./assets/assets/icon/success-icon.png" alt="Success" class="notification-icon">
+        <p>Thêm nhân viên thành công!</p>
+    </div>
+    
+    
     <script src="./assets/assets/font/fontawesome-5.15.1/js/all.min.js"></script>
     <script src="./js/openForm.js"></script>
     <script src="./js/jQuery-3.7.1.js"></script>

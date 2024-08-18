@@ -19,6 +19,10 @@ class EmployeePage {
      */
     initEvent() {
         try {
+            document.querySelector('#btn-timkiem').addEventListener('click', function () {
+                const searchId = document.querySelector('#searchById').value.trim();
+                loadData(10, 1, searchId); // Adjust the pageSize and pageNumber as needed
+            });
             // Event delegation for dynamically added elements
             document.body.addEventListener('click', (event) => {
                 if (event.target.closest('.btn-add')) this.btnAddClick();
@@ -76,19 +80,103 @@ class EmployeePage {
                             <td>${item.GenderName}</td>
                             <td>${new Date(item.IdentityDate).toLocaleDateString()}</td>
                             <td>${item.Email}</td>
-                            <td>${item.IdentityPlace}</td>
+                            <td>
+                                ${item.IdentityPlace}
+                                
+                            </td>
+                            <td>
+                            <div class="control-row">
+                                    <button class="edit-btn" style="color:green; font-size:26px;" data-id="${item.EmployeeId}"><i class="fa fa-pencil-alt"></i></button>
+                                    <button class="delete-btn" style="color:red;font-size:26px;"  data-id="${item.EmployeeId}"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
                         `;
                         tbody.append(tr);
                         i++;
                     });
+    
+                    // Add event listeners for Edit and Delete buttons
+                    tbody.querySelectorAll('.edit-btn').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.closest('button').getAttribute('data-id');
+                            this.loadEmployeeDetails(id); // Call your edit function here
+                        });
+                    });
+    
+                    tbody.querySelectorAll('.delete-btn').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.closest('button').getAttribute('data-id');
+                            this.deleteEmployee(id); // Call your delete function here
+                        });
+                    });
+    
                 })
                 .catch(error => console.error('Error fetching employee data:', error));
         } catch (error) {
             console.error(error);
         }
     }
-    
+     loadEmployeeDetails(employeeId) {
+        fetch( this.apiUrl+`Employees/${employeeId}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('maNV').value = data.EmployeeCode || '';
+            document.getElementById('hoVaTen').value = data.FullName || '';
+            document.getElementById('ngaySinh').value = data.BirthDate ? new Date(data.BirthDate).toISOString().split('T')[0] : '';
+            //document.querySelector(`input[name="gender"][value="${data.Gender || ''}"]`).checked = true;
+            document.getElementById('viTri').value = data.Position || '';
+            document.getElementById('soCMTND').value = data.IdentityNumber || '';
+            document.getElementById('ngayCap').value = data.IdentityIssueDate ? new Date(data.IdentityIssueDate).toISOString().split('T')[0] : '';
+            document.getElementById('phongBan').value = data.Department || '';
+            document.getElementById('noiCap').value = data.IssuePlace || '';
+            document.getElementById('diaChi').value = data.Address || '';
+            document.getElementById('dtDiDong').value = data.Mobile || '';
+           // document.querySelector('input[type="text"][name="phone"]').value = data.Landline || '';
+            document.getElementById('email').value = data.Email || '';
+            //document.getElementById('bankAccount').value = data.BankAccount || '';
+            //document.getElementById('bankName').value = data.BankName || '';
+            //document.getElementById('bankBranch').value = data.BankBranch || '';
 
+            // Ensure that gender selection is managed correctly
+            document.querySelectorAll('input[name="gender"]').forEach(radio => {
+                radio.checked = (radio.value === data.Gender);
+            });
+
+            // Show the form
+            document.querySelector('.thong-tin-nv').classList.remove('display-none');;
+            })
+            .catch(error => console.error('Error fetching employee details:', error));
+    }
+    
+    deleteEmployee(employeeId) {
+        if (confirm(`Bạn có muốn xóa nhân viên có ID là ${employeeId} không?`)) {
+            fetch(this.apiUrl + `Employees/${employeeId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Employee deleted successfully.');
+                    this.loadData(this.pageSize, this.pageNumber); // Reload the data
+                } else {
+                    alert('Failed to delete employee. Please try again.');
+                }
+            })
+            .catch(error => console.error('Error deleting employee:', error));
+        }
+    }
+    
+    showSuccessNotification() {
+        const notification = document.getElementById('success-notification');
+        notification.classList.add('show');
+    
+        // Hide the notification after 3 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 3000);
+    }
     /**
      * Handle page size selection change
      * Author: Pham Nghia
@@ -167,6 +255,7 @@ class EmployeePage {
         })
         .then(response => {
             if (response.ok) {
+                this.showSuccessNotification();
                 alert('Thành công!');
                 this.loadData(document.getElementById('pageSize').value);
                 this.btnClose();
